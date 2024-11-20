@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--    
+        用来填写数据
+
+        form  表单     
+                action  将数据提交到指定路径上
+
+file:///D:/Project/pythonProject/05_Web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/01_HTML%E5%9F%BA%E7%A1%80/02_%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE.html?sex=on
+
+file:///D:/Project/pythonProject/05_Web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/01_HTML%E5%9F%BA%E7%A1%80/02_%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE.html
+
+?user=aaa&pwd=bbb&sex=on
+
+file:///D:/Project/pythonProject/05_Web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/01_HTML%E5%9F%BA%E7%A1%80/02_%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE.html?
+
+user=aaa&pwd=bbb&sex=man
+
+file:///D:/Project/pythonProject/05_Web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/01_HTML%E5%9F%BA%E7%A1%80/02_%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE.html?
+
+user=aaa&pwd=bbb&sex=woman&hobby=basketball&hobby=rap
+
+file:///D:/Project/pythonProject/05_Web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/01_HTML%E5%9F%BA%E7%A1%80/02_%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE.html?
+
+user=1111&pwd=2222&sex=woman&hobby=song&hobby=rap
+        <input  >      输入  
+                默认是文本框输入
+
+                name    参数
+                value   参数对应的值
+     -->
+    <form action="02_常用标签.html">
+        <!-- 文本框 -->
+        用户名:<input name="user"><br>
+        <!--  密码框 -->
+        密码:<input type="password" name="pwd"><br>
+        <!--  单选框    radio    
+                       两个radio 要设置成一组
+            绑定到同一组  才能实现单选效果
+            绑定方式      设置相同的name值
+            checked       默认选中
+        -->
+        性别:<input type="radio" name="sex" value="man" checked>男
+        <input type="radio" name="sex" value="woman">女<br>
+        <!-- 复选框      checkbox -->
+        爱好:<input type="checkbox" checked="checked" name="hobby" value="basketball">篮球
+        <input type="checkbox" name="hobby" value="song">唱跳
+        <input type="checkbox" name="hobby" value="rap">Rap<br>
+        <input type="reset"><br> 
+        <!-- 提交 -->
+        <input type="submit" value="这是提交按钮">
+
+    </form>
+
+
+</body>
+
+</html>

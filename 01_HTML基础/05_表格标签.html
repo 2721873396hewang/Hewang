@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- table  表格  布局   
+    
+        行  
+        列
+
+        tr  行
+        td  单元格
+        th  加粗单元格
+
+        rowspan 跨行   单元格上下合并
+        colspan 跨列   单元格左右合并
+    -->
+    <table border="5" >
+        <tr>
+            <th colspan="8">上午/下午</th>
+        </tr>
+        <tr>
+            <th>上午/下午</th>
+            <th style="color: blue;">周一</th>
+            <th>周二</th>
+            <th>周三</th>
+            <th>周四</th>
+            <th>周五</th>
+            <th>周六</th>
+            <th>周日</th>
+        </tr>
+        <tr>
+            <td rowspan="3">上午</td>
+            <td rowspan="3" colspan="5">1111</td>
+            <!-- <td>2222</td>
+            <td>3333</td>
+            <td>4444</td>
+            <td>5555</td> -->
+            <td rowspan="5" colspan="2">休息</td>
+            <!-- <td rowspan="5">休息</td> -->
+        </tr>
+  
+        
+        <tr>
+            <!-- <td>1111</td>
+            <td>2222</td>
+            <td>3333</td>
+            <td>4444</td>
+            <td>5555</td> -->
+        </tr>
+        <tr>
+            <!-- <td>1111</td>
+            <td>2222</td>
+            <td>3333</td>
+            <td>4444</td>
+            <td>5555</td> -->
+
+        </tr>
+        <tr>
+            <td rowspan="2">下午</td>
+            <td>1111</td>
+            <td>2222</td>
+            <td>3333</td>
+            <td>4444</td>
+            <td>5555</td>
+
+        </tr>
+        <tr>
+
+            <td>1111</td>
+            <td>2222</td>
+            <td>3333</td>
+            <td>4444</td>
+            <td>5555</td>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
+

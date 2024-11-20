@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--  
+
+        优先级    行内样式 >  头部样式  > 外部样式   
+
+                离标签越近的效果 就是最终效果
+
+     -->
+
+    <!--  外部样式      样式写在.css中  通过link 标签引用过来 -->
+    <link rel="stylesheet" href="06.css">
+    <style>
+    /*     头部样式      样式写在head标签 style标签中  */
+        span{
+            /* color:green; */
+            /*   0-255  0-255 0-255    任何颜色都可以由红绿蓝组成 
+                 00-FF  00-FF 00-FF 
+
+                 FFFFFF
+                 AABBCC == ABC    
+
+                 rgb(41, 103, 165)
+                 #FFFFFF
+            */
+            color: #ea60b3;     
+        }
+    </style>   
+</head>
+
+<body>
+    <!-- <p>我是<span style="color: red;">中国人</span></p> -->
+    <!--   行内样式      样式写在标签的style属性中  -->
+    <p>我是<span>中国人</span></p>
+</body>
+
+</html>
